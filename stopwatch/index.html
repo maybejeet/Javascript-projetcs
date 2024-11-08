@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch-Timer</title>
+    <style>
+         html body{
+            background-color: rgb(160, 160, 160);
+            height: 100%;
+            margin: 0;
+        }
+        #stopwatch{
+            /* position: absolute; */
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        h1{
+            font-size: 200px;
+        }
+        #buttons{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            gap: 20px;
+
+        }
+        .button{
+            padding: 10px 30px;
+            border-radius: 10px;
+            font-size: 20px;
+            transition: 2s;
+            transition: background-color 0.3s;
+        }
+        .button:hover{
+            cursor: pointer;
+            background-color: gray;
+        }
+        .hidden{
+            display: none;
+        }
+        #timeDisplay{
+            display: flex;
+        }
+        /* .scores{
+            position: absolute;
+            z-index: 3;
+            left: 50%;
+            top: 15%;
+            transform: translate(-50%,0);
+            display: flex;
+            flex-direction: column;
+        } */
+        
+    </style>
+</head>
+<body>
+    
+    <!-- <button id="game" class="button">Game Mode</button> -->
+     
+     <!-- <div class="scores">
+        <input id="name" type="text" placeholder="Enter your name">
+        <div id="Score">Your score is: <span id="currentScore">00:00:00</span></div>
+        <div id="highScore"><h2>Highest Score: 9999 by [name]</h2></div>
+    </div> -->
+   
+
+
+    <div id="stopwatch">
+        
+        <span id="timeDisplay">
+            <h1 id="minutes">00</h1><h1>:</h1><h1 id="seconds">00</h1><h1>:</h1><h1 id="mili">00</h1>
+        </span>
+  
+    <div id="buttons"> 
+        <button id="startBtn" class="button" >Start</button>
+        <button id="resumeBtn" class="button hidden" >Resume</button>
+        <button id="stopBtn" class="button hidden" >Stop</button>
+        <button id="resetBtn" class="button" >Reset</button>
+    </div>
+    
+    
+</div>
+   
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
