@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Game: Tic Tac Toe</title>
+</head>
+<body class="p-0 m-0 h-screen  bg-gradient-to-r from-blue-500 to-violet-800 box-border">
+    <main class="w-full h-full flex justify-center items-center flex-col ">
+      <div class="flex  gap-3 mb-6" id="playerNameInput">
+        <span>
+          <input type="text" id="player1" placeholder="Player 1" class="border-2 border-solid border-black rounded-md">
+        </span>
+        <span>
+          <input type="text" id="player2" placeholder="Player 2" class="border-2 border-solid border-black rounded-md">
+        </span>
+        <span>
+          <button type="submit" class="border border-dashed p-1 text-xs text-white rounded-md" id="submit">start</button>
+        </span>
+        
+      </div>
+
+      <div class="flex gap-12 mb-6 hidden" id="showScore">
+        <span><h2 class="text-2xl text-white" id="showPlayer1Score"></h2></span>
+        <span><h2 class="text-2xl text-white" id="showPlayer2Score"></h2></span>
+      </div>
+        <span class="mb-8 sm:text-4xl text-2xl font-mono" id="instruction"><h3>Start the game!!</h3></span>
+        <div class="sm:h-[500px] sm:w-[500px] h-[350px] w-[350px] bg-black flex flex-wrap sm:mb-3 mb-4" id="gameBoard"></div>
+        <button  class="rounded-xl border-dashed border p-1 text-white" id="reset">Reset</button>
+        
+      </main>
+      
+      
+
+    <script src="script.js"></script>
+</body>
+</html>
